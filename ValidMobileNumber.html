@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="TheMobileNumber" placeholder="Enter Mobile number">
+<input type="button" id="Check" value="Check" onclick="isMobileNumber();">
+<script>
+    function isMobileNumber() {
+        var num =document.getElementById("TheMobileNumber").value;
+        regexp = /^[0-9]*(-0)+[0-9]{9}$/;
+        if(regexp.test(num)){
+            alert("This is mobilenumber");
+        }else alert("this is not mobilenumber");
+    }
+    isMobileNumber();
+</script>
+</body>
+</html>
